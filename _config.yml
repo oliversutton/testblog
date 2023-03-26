@@ -35,6 +35,21 @@ theme: minima
 plugins:
   - jekyll-feed
 
+
+collections:
+  scientists:
+    output: true
+    permalink: /scientists/:name
+    person: true
+  
+defaults:
+  -
+    scope:
+      type: "scientists"
+    values:
+      layout: "scientist"
+      imagedir: "/images/scientists/"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

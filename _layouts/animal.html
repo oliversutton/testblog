@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article class="animal">
+
+
+    <img src="{{ page.picture | prepend: {{page.collection | append: '/'}} }}" alt="Photo of a {{ page.title | downcase }}">
+
+
+
+    {% assign directory = "/images/" | append: page.collection | append: "/" %}
+    
+    <!-- {{ page.collection | append: "/" }} -->
+    
+    <!-- {{ directory }} -->
+
+    {{ site.collections[page.collection] }}
+
+
+
+    {{ site.collections[animals] }}
+
+    <img src="{{ directory | append: page.picture }}" alt="Photo of a {{ page.title | downcase }}">
+
+
+  <h1>Animal Profile: {{ page.title }}</h1>
+
+  <div class="animal-class {{ page.class | downcase }}">
+    {{ page.class }}
+  </div>
+
+  <div class="animal-family {{ page.family | downcase }}">
+    {{ page.family }}
+  </div>
+
+  <div>
+    imagedir: {{ site.animals.imagedir }}
+    
+    {{ content }}
+  </div>
+
+</article>

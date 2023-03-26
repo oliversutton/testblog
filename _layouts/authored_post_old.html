@@ -1,0 +1,23 @@
+---
+layout: post
+---
+<!-- <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"> -->
+Authors: 
+
+{% assign authorCount = page.authors | size %}
+{% if authorCount == 0 %}
+    No author
+{% elsif authorCount == 1 %}
+    {{ page.authors | first }}
+{% else %}
+    {% for author in page.authors %}
+        {% if forloop.first %}
+            {% include author_link.html author=author %}
+        {% elsif forloop.last %}
+            and {% include author_link.html author=author %}
+        {% else %}
+            , {% include author_link.html author=author %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+<!-- </article> -->
