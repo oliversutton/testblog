@@ -45,4 +45,4 @@ and an animation of cyclic competition
 
 
 ### References
-[^citation]: This is technically a footnote, but we can also use it as a citation.
+[^citation]: This is technically a footnote, but we can also use it as a citation. Clicking the arrow takes you back to the text.
