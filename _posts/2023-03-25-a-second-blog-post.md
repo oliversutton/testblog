@@ -39,9 +39,17 @@ int main() {
 }
 ```
 
-and an animation of cyclic competition
+and an animation of cyclic competition:
 
 ![cyclic competition]({{ '/images/about/cycliccompetition.gif' | relative_url }})
+
+We can even include interactive graphics generated in python, using the `mpld3` package
+
+{% include_relative second-post-includes/figure.html %}
+
+and an interactive animation:
+
+{% include_relative second-post-includes/animation.html %}
 
 
 ### References
