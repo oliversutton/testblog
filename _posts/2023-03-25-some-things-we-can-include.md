@@ -1,6 +1,6 @@
 ---
 layout: authored_post
-title:  "A second blog post!"
+title:  "Some of the things we can include"
 date:   2023-03-25 07:46:38 +0000
 categories: news
 authors: 
