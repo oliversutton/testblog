@@ -2,7 +2,7 @@
 layout: authored_post
 title:  "Welcome to the blog! 🎉"
 date:   2023-03-24 07:46:38 +0000
-categories: jekyll update
+categories: update
 authors:
   - Claude Hopkins
   - Cuthbert Merriweather

@@ -1,4 +1,4 @@
-{% assign matches = site.scientists | where: "name", include.author %}
+{% assign matches = site.people | where: "name", include.author %}
 {% assign nmatches = matches | size %}
 {% if nmatches > 0 %}
 {% assign person = matches | first | name %}

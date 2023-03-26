@@ -2,7 +2,7 @@
 layout: authored_post
 title:  "A second blog post!"
 date:   2023-03-25 07:46:38 +0000
-categories: jekyll update
+categories: news
 authors: 
   - Undreth Galgorady
 ---
@@ -21,7 +21,7 @@ $$
 $$
 
 We can put in[^citation] pictures:
-![Lion]({{ '/images/scientists/lion.jpg' | relative_url }})
+![Lion]({{ '/images/people/lion.jpg' | relative_url }})
 
 and `code` including in blocks with syntax highlighting
 ```python
@@ -29,6 +29,14 @@ def my_function(x):
   return x + 1
 
 my_function(5) # returns 6
+```
+Writers can choose the language of the syntax highlighting too, heres C++:
+```cpp
+int main() {
+  std::vector<int> a;
+  a.push_back(1);
+  std::cout << a[0] << std::endl;
+}
 ```
 
 and an animation of cyclic competition
