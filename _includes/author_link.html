@@ -1,8 +1,8 @@
-{% assign matches = site.people | where: "name", include.author %}
-{% assign nmatches = matches | size %}
-{% if nmatches > 0 %}
-{% assign person = matches | first | name %}
-<a href="{{ person.url | relative_url }}"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ person.name }}</span></span></a>
-{% else %}
-<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ include.author }}</span></span>
-{% endif %}
+{%- assign matches = site.people | where: "name", include.author -%}
+{%- assign nmatches = matches | size -%}
+{%- if nmatches > 0 -%}
+{%- assign person = matches | first | name -%}
+<a href="{{- person.url | relative_url -}}">{{- person.name -}}</a>
+{%- else -%}
+{{- include.author -}}
+{%- endif -%}
