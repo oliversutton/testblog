@@ -1,0 +1,34 @@
+<div class="post-list-container">
+  {%- if site.posts.size > 0 -%}
+  {% if include.list_title %}
+    <h3 class="post-list-heading">{{ include.list_title | default: "Posts" }}</h3>
+  {% endif %}
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+        <span class="post-meta">
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ post.date | date: date_format }} 
+          </time>
+      {%- if post.authors -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{% include author_list.html authors=post.authors %}</span></span>
+      {%- endif -%}
+      </span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>
