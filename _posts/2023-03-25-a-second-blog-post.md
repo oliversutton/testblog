@@ -23,6 +23,10 @@ $$
 We can put in[^citation] pictures:
 ![Lion]({{ '/images/people/lion.jpg' | relative_url }})
 
+and embed videos from YouTube
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iQf77WWNt40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 and `code` including in blocks with syntax highlighting
 ```python
 def my_function(x):
@@ -30,7 +34,7 @@ def my_function(x):
 
 my_function(5) # returns 6
 ```
-Writers can choose the language of the syntax highlighting too, heres C++:
+authors can choose the language of the syntax highlighting too, here's C++:
 ```cpp
 int main() {
   std::vector<int> a;
@@ -39,7 +43,7 @@ int main() {
 }
 ```
 
-and an animation of cyclic competition:
+and a gif animation of cyclic competition:
 
 ![cyclic competition]({{ '/images/about/cycliccompetition.gif' | relative_url }})
 
