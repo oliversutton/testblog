@@ -20,7 +20,7 @@ $$
 \end{align}
 $$
 
-We can put in[^citation] pictures:
+We can put in citations[^citation] and pictures:
 ![Lion]({{ '/images/people/lion.jpg' | relative_url }})
 
 and embed videos from YouTube
