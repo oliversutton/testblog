@@ -5,7 +5,7 @@ position: "Lecturer"
 field: Mathematics
 institute: University of Cranborough
 email: claude.hopkins@email.net
-image: zebra.jpg
+image: generated_photo.jpg
 homepage: google.com
 ---
 
