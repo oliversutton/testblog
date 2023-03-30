@@ -55,6 +55,8 @@ and an interactive animation:
 
 {% include_relative second-post-includes/animation.html %}
 
+Finally, we can also export entire Jupyter notebooks to a Markdown format, which can directly be included as posts -- see [the example]({{ site.baseurl }}{% post_url 2023-03-26-exploring-a-convolutional-neural-network %})
+
 
 ### References
 [^citation]: This is technically a footnote, but we can also use it as a citation. Clicking the arrow takes you back to the text.
