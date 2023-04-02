@@ -1,0 +1,28 @@
+.person-namecard {
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    overflow: hidden; 
+    margin-bottom:2em;
+}
+
+.person-namecard-data {
+    flex-grow: 1;
+    margin-left: 0.5em;
+    padding: 1em;
+    order: 1;
+    flex-basis: 10em;
+}
+
+div.person-namecard-image {
+    flex-grow: 1;
+    order: 2;
+    flex-basis: 10em;
+    opacity: 80%;
+}
+
+.person-image {
+    border-radius: 50svh;
+}
